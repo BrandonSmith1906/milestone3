@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greedy Ingredients</title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+html {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+body{
+    height:100%;
+    padding:0;
+    margin:0;
+    background:beige;
+}
+ wrapper{
+        min-height:auto;
+        position:relative;
+    }
+    footer{
+        height:50px;
+        width:100%;
+        background-color:black;
+        position:relative;
+        left:0px;
+        bottom:0px;
+        text-align:center;
+    }
+    .box{
+        width:auto;
+        height:400px;
+        background:#CCC;
+        margin:0px auto;
+        background-image:linear-gradient(
+    to bottom,
+    rgba(0,0,0,0),
+    rgba(1,1,1,10)
+  ),url(https://s1.1zoom.me/big0/847/Fast_food_Pizza_French_fries_Hamburger_Ketchup_571903_1280x853.jpg);
+        background-size:cover;
+    }
+    .box h1{
+        margin:0;
+        padding:0;
+        font-family:arial;
+        color:#ffffff;
+        font-size:3em;
+        text-align:center;
+        position:relative;
+        top:50%;
+        
+    }
+    .box p{
+        margin:0;
+        padding:0;
+        text-align:center;
+        position:relative;
+        top:55%;
+        color:darkgrey;
+       
+    }
+    h2{
+        text-align:center;
+        margin:40px auto;
+    }
+    li a{
+        color:black;
+    }
+    a{
+        color:#772;
+    }
+   img{
+       margin:20px auto;
+       padding:0;
+   }
+    p{
+        font-family: inherit;
+        font-size:auto;
+        font:bold;
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <div class="container-fluid alert-container hidden-xs">
+           
+                <div class="col-xs-12">
+            </div>
+        
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+               
+                <a href="index.html" class="navbar-brand">
+                    Greedy Ingredients
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="Meat.html">Meat</a></li>
+                    <li><a href="Vegeterian.html">Vegeterian</a></li>
+                  
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="visible-xs"><a href="">Sign In</a></li>
+                </ul>
+
+                <div class="navbar-header navbar-right hidden-xs">
+                    <a href="/login" class='btn btn-default navbar-btn'>Sign Up</a>
+                    <p class="navbar-text"><i>amazing recipes quick & easy!</i></p>
+                </div>
+            </div>
+        </div>
+    
+    <header class="container-fluid callout-container">
+      
+        <!-- Callout -->
+       
+            <div class="col-xs-12">
+            
+            <div class="box">
+
+                    
+                    <h1>Greedy Ingredients!</h1>
+                    <p><button class="btn btn-lg btn--cta" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
+            
+                
+            </div>
+            </div>
+        <!-- /.callout -->
+    </header>
+
+    <section class="container-wrapper">
+        <div class="container content container">
+           
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 text-center">
+                        <div class="media">
+                            <div class="media-left-sm-12">
+                                <img src="https://st5.ning.com/topology/rest/1.0/file/get/1560150223?profile=RESIZE_1024x1024" class="img-circle media-object" height=150 width=150>
+                            </div>
+                            <div class="media-body">
+                                
+                                    <p>"Too many cooks spoil the broth" #GreedyIngredients.</p>
+                                    <footer1>Jane Doe on <cite title="Twitter">Twitter</cite></footer1>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-center">
+                        <div class="media">
+                            <div class="media-left-sm-12">
+                                <img src="https://www.healthyfood.co.uk/wp-content/uploads/2015/06/healthy-diabetes-diet.jpg" class="img-circle media-object" height=150 width=150>
+                            </div>
+                            <div class="media-body">
+                                    <p>Make a healthy start to the New Year!</p>
+                                    <footer1>Jane Doe on <cite title="Twitter">Twitter</cite></footer1>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.quotes -->
+        </div>
+    </div>
+
+    <div class="container-wrapper container-wrapper">
+        <div class="container features-container content-container">
+            <!-- Features -->
+            <section class="features">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h2 class="text-uppercase">Desserts:</h2>
+                             </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="News">
+                            <h3><span class="glyphicon glyphicon-cutlery"></span>Tiramisu!</h3>
+                            <p><li> 6 egg yolks</br>
+    <li> 1 cup white sugar, divided</br>
+    <li> 1 pound mascarpone cheese</br>
+    <li> 6 egg whites, stiffly beaten</br>
+    <li> 1/4 cup heavy cream</br>
+
+    <li> 3 tablespoons kirschwasser</br>
+    <li> 1 1/4 cups strong brewed coffee, cold</br>
+    <li> 25 ladyfingers</br>
+    <li> 1 tablespoon unsweetened cocoa powder</br> </p>
+    <img src="https://prettysimplesweet.com/wp-content/uploads/2018/05/Tiramisu-Cake-Recipe.jpg" width="200" height="200">
+                            <p><a class="btn btn-sm btn-default" href="read-more.html">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="feature"><h3>Fresh strawberry granita</h3>
+                            <p>    <li> 2 pounds ripe strawberries, hulled and halved</br>
+    <li> 1/3 cup white sugar, or to taste</br>
+    <li> 1 cup water</br>
+
+    <li> 1/2 teaspoon lemon juice (optional)</br>
+    <li> 1/4 teaspoon balsamic vinegar (optional)</br>
+    <li> 1 tiny pinch salt</br>
+</p>
+<img src="https://assets.epicurious.com/photos/560de56df9a84192308a7b81/1:1/w_600%2Ch_600/232106.jpg" width="200" height="200">
+                            <p><a class="btn btn-sm btn-default" href="read-more2.html">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 hidden-md col-lg-4">
+                        <div class="feature">
+                            <h3>Carrot Cake ||</h3>
+                            <p>    <li> 6 egg whites</br>
+    <li> 1 1/3 cups white sugar</br>
+    <li> 1 cup applesauce</br>
+    <li> 1/2 cup skim milk</br>
+    <li> 1 1/2 teaspoons vanilla extract</br>
+    <li> 1/4 teaspoon ground cloves</br>
+    <li> 1/2 teaspoon ground nutmeg</br>
+    <li> 1 tablespoon ground cinnamon</br>
+
+    <li> 2 teaspoons baking soda</br>
+    <li> 1 cup whole wheat flour</br>
+    <li> 1 cup all-purpose flour</br>
+    <li> 1 (8 ounce) can crushed pineapple with juice</br>
+    <li> 2 cups shredded carrots</br>
+    <li> 1/2 cup chopped walnuts</br>
+    <li> 1/2 cup raisins</br>
+</p>
+                            <p><a class="btn btn-sm btn-default" href="read-more3.html">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.features -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up For Merch Drop!</h4>
+                </div>
+                <div class="modal-body">
+                    
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block"></p>We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <footer>
+  
+     <img src="https://cdn.imgbin.com/23/20/5/imgbin-rooster-cartoon-chicken-chicken-white-chicken-character-illustration-V6yax5c2ZSq1xywrQyX2HVwzH.jpg" height="40px" style="pozition:absolute; margin:5px; padding:5px;">
+    </a>
+ 
+     <img src="https://saurabh-sharma.com/images/fish-cliparts-transparent-background-3.png" height="40px" style="pozition:absolute; margin:5px; padding:5px;">
+     </a>
+     
+   
+     <img src="https://img.favpng.com/4/13/6/cartoon-beef-cattle-clip-art-png-favpng-UPLPxYNnGcKh8B5Dy2ZPQrt34.jpg" height="40px" style="pozition:absolute; margin:5px; padding:5px;">
+</a>
+ </footer>
+    </div>
+        
+</body>
+
+</html> 
